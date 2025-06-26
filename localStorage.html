@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Sign up</h1>
+<form id="sign-up-form">
+    <input type="text" placeholder="Enter your name" id="Name"><br><br>
+    <input type="password" placeholder="Enter your password" id="Password"><br><br>
+    <button type="button" onclick="sign_up()">Sign up</button>
+</form>
+
+<h1>Login</h1>
+<form id="login-form">
+    <input type="text" placeholder="Enter your name" id="loginName"><br><br>
+    <input type="password" placeholder="Enter your password" id="loginPassword"><br><br>
+    <button type="button" onclick="login()">Login</button>
+</form>
+
+<script>
+    function sign_up() {
+        let Name = document.getElementById("Name").value;
+        let Password = document.getElementById("Password").value;
+
+        localStorage.setItem("Name", Name);
+        localStorage.setItem("Password", Password);
+    }
+
+    function login() {
+        let loginName = document.getElementById("loginName").value;
+        let loginPassword = document.getElementById("loginPassword").value;
+
+        let storedName = localStorage.getItem("Name");
+        let storedPassword = localStorage.getItem("Password");
+
+        if (loginName === storedName && loginPassword === storedPassword) {
+            alert("Login successful!");
+        } else {
+            alert("Login failed.");
+        }
+    }
+  </script>
+</body>
+</html>
