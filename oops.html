@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OOP Practice</title>
+</head>
+<body>
+
+<h2>Output:</h2>
+
+<script>
+  class Person {
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+
+    introduce() {
+      document.write("Hi, I'm " + this.name + ". I'm " + this.age + " years old.<br>");
+    }
+  }
+
+  class Stu extends Person {
+    constructor(name, age, course) {
+      super(name, age);
+      this.course = course;
+    }
+
+    introduce() {
+      document.write("Hi, I'm " + this.name + ", a " + this.age + " year old student studying " + this.course + ".<br>");
+    }
+  }
+
+  class Teacher extends Person {
+    constructor(name, age, subject) {
+      super(name, age);
+      this.subject = subject;
+    }
+
+    introduce() {
+      document.write("Hello, I'm Professor " + this.name + ", I teach " + this.subject + ".<br>");
+    }
+  }
+
+  // Create objects
+  let student1 = new Stu("Khadija", 17, "Web Development");
+  let student2 = new Stu("Areeba", 18, "Graphic Design");
+
+  let teacher1 = new Teacher("Miss Ayesha", 30, "JavaScript");
+
+  // Call methods
+  student1.introduce();
+  student2.introduce();
+  teacher1.introduce();
+</script>
+
+</body>
+</html>
