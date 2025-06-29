@@ -38,25 +38,49 @@ student.isActive = true;
 student.age = 18;
 delete student.adress.zip,
 // oops
-/* class person{
-  name
-  age
-  introduce(){
-    document.write("Hi, I'm "+ this.name+ ". I'm " + this.age+"year old"+"<br>");
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  introduce() {
+    document.write("Hi, I'm " + this.name + ". I'm " + this.age + " years old.<br>");
   }
 }
-class stu extends person{
-course
-introduce(){
-  document.write("Hi, I'm "+ this.name+ ", a " + this.age+"year old student studying " + this.course+"<br>");
+
+class Stu extends Person {
+  constructor(name, age, course) {
+    super(name, age); // call parent constructor
+    this.course = course;
+  }
+
+  introduce() {
+    document.write("Hi, I'm " + this.name + ", a " + this.age + " year old student studying " + this.course + ".<br>");
   }
 }
-class teacher extends person{
-subject
-introduce(){
-  document.write("Hello, I'm professor "+ this.name+ ", I teach " + this.+"<br>");
+
+class Teacher extends Person {
+  constructor(name, age, subject) {
+    super(name, age);
+    this.subject = subject;
   }
-}*/
-  </script>
+
+  introduce() {
+    document.write("Hello, I'm Professor " + this.name + ", I teach " + this.subject + ".<br>");
+  }
+}
+
+// Create objects
+let student1 = new Stu("Khadija", 17, "Web Development");
+let student2 = new Stu("Areeba", 18, "Graphic Design");
+
+let teacher1 = new Teacher("Miss Ayesha", 30, "JavaScript");
+
+// Call methods
+student1.introduce();
+student2.introduce();
+teacher1.introduce();
+</script>
 </body>
 </html>
