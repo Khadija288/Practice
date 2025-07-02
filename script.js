@@ -3,5 +3,6 @@ function admission(){
     document.write("Successfully you get admission");
 }
 function test(){
+    preperation();
     
 }
