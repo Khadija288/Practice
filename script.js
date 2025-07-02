@@ -3,6 +3,9 @@ function admission(){
     document.write("Successfully you get admission");
 }
 function test(){
-    preperation();
+    preparation();
     document.write("Attempt test");
+}
+function preparation (){
+    document.write("Learning");
 }
