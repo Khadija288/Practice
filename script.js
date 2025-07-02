@@ -4,5 +4,5 @@ function admission(){
 }
 function test(){
     preperation();
-    
+    document.write("Attempt test");
 }
