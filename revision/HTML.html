@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Khadija's Web Practice</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Welcome to Khadija's Website</h1>
+    <p><strong>Learning HTML is fun!</strong></p>
+    <hr>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a> |
+    <a href="#hobbies">Hobbies</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi! I'm <strong>Khadija</strong>. I'm learning <em>frontend development</em>.</p>
+      <img src="https://via.placeholder.com/200" alt="My Picture" width="200">
+      <hr>
+    </section>
+
+    <!-- HOBBIES LIST -->
+    <section id="hobbies">
+      <h2>My Hobbies</h2>
+      
+      <h3>Unordered List (Fruits)</h3>
+      <ul>
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Banana</li>
+      </ul>
+
+      <h3>Ordered List (Daily Routine)</h3>
+      <ol>
+        <li>Wake up</li>
+        <li>Pray Fajr</li>
+        <li>Study</li>
+      </ol>
+      <hr>
+    </section>
+
+    <!-- TABLE SECTION -->
+    <section>
+      <h2>Student Table</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Khadija</td>
+            <td>17</td>
+            <td>11th</td>
+          </tr>
+          <tr>
+            <td>Fatima</td>
+            <td>16</td>
+            <td>10th</td>
+          </tr>
+          <tr>
+            <td>Ayesha</td>
+            <td>18</td>
+            <td>12th</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+    </section>
+
+    <!-- ARTICLE + ASIDE -->
+    <section>
+      <article>
+        <h2>My First Blog</h2>
+        <p>This is my first article written using semantic HTML elements. I love learning and growing!</p>
+      </article>
+
+      <aside>
+        <h4>Tips:</h4>
+        <p>Practice daily to become a pro in frontend!</p>
+      </aside>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="male"> Male<br><br>
+
+        <label>Country:</label><br>
+        <select>
+          <option>Pakistan</option>
+          <option>Saudi Arabia</option>
+          <option>UAE</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="4" cols="30"></textarea><br><br>
+
+        <input type="checkbox"> I agree to terms & conditions<br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+      <hr>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Khadija's HTML Practice Page</p>
+    <a href="https://www.google.com" target="_blank" rel="noopener">Visit Google</a>
+  </footer>
+
+</body>
+</html>
