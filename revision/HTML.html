@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+  body {
+    background-color: #f0f8ff;
+  }
+  h1 {
+    color: rgb(255, 0, 0);
+    background: linear-gradient(to right, yellow, rgb(255, 103, 156));
+  }
+</style>
 </head>
 <body>
   <!-- header section -->
@@ -13,7 +22,9 @@
   </header>
   <!-- navigation -->
   <nav>
-    <a href="#">about</a><a href="#">hobbies</a><a href="#">blog</a>
+    <a href="#">about</a> |
+    <a href="#">hobbies</a> |
+    <a href="#">blog</a> |
   </nav>
   <!-- main section -->
    <main>
@@ -37,13 +48,12 @@
     </section>
     <section>
     <h1>table</h1>
-    <table>
+    <table border="1">
       <thead>
         <tr>
           <th>Name</th>
           <th>Class</th>
           <th>Course</th>
-          <th>
           <tr>
           <td>Khadija</td>
           <td>12</td>
@@ -66,14 +76,13 @@
     </section>
     <section id="contect">
       <h1>COntect me</h1>
-      <label for="name">Name:</label><br>
-      <input type="text"><br>
-      <label for="eamil">Email:</label>
-      <input type="email">
-      <label>Gender:</label>
+      <label for="name">Name:</label><br><br>
+      <input type="text"><br><br>
+      <label for="eamil">Email:</label><br><br>
+      <input type="email"><br><br>
+      <label>Gender:</label><br><br>
       <input type="radio" name="gender" value="female">Female
       <input type="radio" name="gender" value="male">Male
-      
         </section>
    </main>
 </body>
