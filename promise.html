@@ -8,20 +8,20 @@
 <body>
     <script>
         var cloth = new Promise(function(resolve, reject){
-            var iron = "Switched off"
-            if (iron = "Switched on") {
+            var iron = "trun on"
+            if (iron === "Switched on") {
                 resolve("press cloth.") ;              
             } else {
                 reject("Switch on the iron to press the clothes.");
             }
-        })
+        });
         cloth
         .then(function(result){
-            document.write("Success: "+result);
+            document.write("Success: ",result);
         })
-        .catch(function(error){
-            document.write("Error:"+error);
-        })
+       .catch(function(error) {
+        document.write("Error: ", error);
+    });
     </script>
 </body>
 </html>
