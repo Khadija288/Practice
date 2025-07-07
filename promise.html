@@ -17,9 +17,11 @@
         })
         cloth
         .then(function(result){
-            document.write("Success: ", result);
+            document.write("Success: "+result);
         })
-        .catch(function(error){})
+        .catch(function(error){
+            document.write("Error:"+error);
+        })
     </script>
 </body>
 </html>
