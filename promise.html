@@ -10,12 +10,16 @@
         var cloth = new Promise(function(resolve, reject){
             var iron = "Switched on"
             if (iron = "Switched on") {
-                resolve("press cloth") ;              
+                resolve("press cloth.") ;              
             } else {
-                reject("Switch on the iron and press cloths");
+                reject("Switch on the iron to press the clothes.");
             }
         })
-        clot
+        cloth
+        .then(function(result){
+            document.write("Success: ", result);
+        })
+        
     </script>
 </body>
 </html>
