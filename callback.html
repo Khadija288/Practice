@@ -7,14 +7,16 @@
 </head>
 <body>
     <script>
-        function greet(name, callback){
-            document.write("Hi, "+ name+ "<br");
-            callback();
-        };
-        function bye(){
-            document.write("Say Goodbye");
-        };
-     greet(prompt("Enter name"),bye);  
+  function greet(name, callback) {
+    console.log("Hello, " + name);
+    callback();
+}
+
+function sayBye() {
+    console.log("Goodbye!");
+}
+
+greet(prompt("name"), sayBye);  
     </script>
 </body>
 </html>
