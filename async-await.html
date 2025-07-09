@@ -7,13 +7,13 @@
 </head>
 <body>
      <script>
-        async function data(){
+        async function UserData(){
             let response = await fetch("https://jsonplaceholder.typicode.com/users/1");
             let data = await response.json();
             console.log("User Name:", data.name);
             document.write("User Name: " + data.name);
         }
-         getUserData();
+         data();
      </script>
 </body>
 </html>
